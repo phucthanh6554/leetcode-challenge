@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new RomanToInteger();
+var service = new LongestCommonPrefixProblem();
 
-int result = service.RomanToInt("V");
+var result = service.LongestCommonPrefix(new []{"flower","flow","flight"});
 
 Console.WriteLine(result);
