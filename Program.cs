@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new LongestCommonPrefixProblem();
+var service = new ValidParentheses();
 
-var result = service.LongestCommonPrefix(new []{"flower","flow","flight"});
+var result = service.IsValid("([)]");
 
 Console.WriteLine(result);
