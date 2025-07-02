@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new RemoveDuplicateSortedArray();
+var service = new RemoveElementProblem();
 
-var result = service.RemoveDuplicates(new[] { 0,0,1,1,1,2,2,3,3,4});
+var result = service.RemoveElement(new int[] { 0,1,2,2,3,0,4,2 } , 2);
 
 Console.WriteLine(result);
