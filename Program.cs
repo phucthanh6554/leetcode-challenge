@@ -1,10 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new MergeTwoSortList();
+var service = new RemoveDuplicateSortedArray();
 
-var listNode1 = new MergeTwoSortList.ListNode(1, new MergeTwoSortList.ListNode(2, new MergeTwoSortList.ListNode(3)));
-var listNode2 = new MergeTwoSortList.ListNode(1, new MergeTwoSortList.ListNode(2, new MergeTwoSortList.ListNode(7 , new MergeTwoSortList.ListNode(9))));
-
-var result = service.MergeTwoLists(listNode1, listNode2);
+var result = service.RemoveDuplicates(new[] { 0,0,1,1,1,2,2,3,3,4});
 
 Console.WriteLine(result);
