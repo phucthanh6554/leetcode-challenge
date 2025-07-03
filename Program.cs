@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new RemoveElementProblem();
+var service = new LastWordLength();
 
-var result = service.RemoveElement(new int[] { 0,1,2,2,3,0,4,2 } , 2);
+var result = service.LengthOfLastWord("Hello World");
 
 Console.WriteLine(result);
