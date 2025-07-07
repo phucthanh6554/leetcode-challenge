@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new PlusOneProblem();
+var service = new AddBinaryProblem();
 
-var result = service.PlusOne(new[] { 9,9,9,9 });
+var result = service.AddBinary("1111", "1111");
 
 Console.WriteLine(result);
