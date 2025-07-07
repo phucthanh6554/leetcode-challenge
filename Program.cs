@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new AddBinaryProblem();
+var service = new SqrtProblem();
 
-var result = service.AddBinary("1111", "1111");
+var result = service.MySqrt(9);
 
 Console.WriteLine(result);
