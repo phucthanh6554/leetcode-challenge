@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new SqrtProblem();
+var service = new ClimbingStairProblem();
 
-var result = service.MySqrt(9);
+var result = service.ClimbStairs(4);
 
 Console.WriteLine(result);
