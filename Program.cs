@@ -1,7 +1,10 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new RemoveDuplicateSortedLinkedList();
+var service = new MergeSortedArrayProblem();
 
-var result = service.DeleteDuplicates(new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3))))));
+var arr1 = new int[] { 9, 10, 11, 0, 0, 0 };
+var arr2 = new int[] { 2,5,6 };
 
-Console.WriteLine(result);
+ service.Merge(arr1, 3, arr2, 3);
+
+Console.WriteLine();
