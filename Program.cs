@@ -1,10 +1,14 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new MergeSortedArrayProblem();
+var service = new BinaryInorderTraveralProblem();
 
-var arr1 = new int[] { 9, 10, 11, 0, 0, 0 };
-var arr2 = new int[] { 2,5,6 };
+BinaryInorderTraveralProblem.TreeNode root = new BinaryInorderTraveralProblem.TreeNode(1);
+root.left = new BinaryInorderTraveralProblem.TreeNode(2);
+root.right = new BinaryInorderTraveralProblem.TreeNode(3);
+root.left.left = new BinaryInorderTraveralProblem.TreeNode(4);
+root.left.right = new BinaryInorderTraveralProblem.TreeNode(5);
+root.right.right = new BinaryInorderTraveralProblem.TreeNode(6);
 
- service.Merge(arr1, 3, arr2, 3);
+var result = service.InorderTraversal(root);
 
 Console.WriteLine();
