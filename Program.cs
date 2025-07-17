@@ -1,27 +1,17 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new SameTreeProblem();
+var service = new SymmetricTreeProblem();
 
-var root = new SameTreeProblem.TreeNode(1);
-root.left = new SameTreeProblem.TreeNode(2);
-//root.right = new SameTreeProblem.TreeNode(3);
-//root.left.left = new SameTreeProblem.TreeNode(4);
-//root.left.right = new SameTreeProblem.TreeNode(5);
+var root = new SymmetricTreeProblem.TreeNode(1);
+root.left = new SymmetricTreeProblem.TreeNode(2);
+root.right = new SymmetricTreeProblem.TreeNode(2);
 
-var root2 = new SameTreeProblem.TreeNode(1);
-root2.left = null;
-root2.right = new SameTreeProblem.TreeNode(2);
-//root2.left.left = new SameTreeProblem.TreeNode(4);
-//root2.left.right = new SameTreeProblem.TreeNode(5);
+root.left.left = new SymmetricTreeProblem.TreeNode(3);
+root.left.right = new SymmetricTreeProblem.TreeNode(4);
 
-var result = service.IsSameTree(root, root2);
+root.right.left = new SymmetricTreeProblem.TreeNode(4);
+//root.right.right = new SymmetricTreeProblem.TreeNode(3);
+
+var result = service.IsSymmetric(root);
 
 Console.WriteLine();
-
-
-// BinaryInorderTraveralProblem.TreeNode root = new BinaryInorderTraveralProblem.TreeNode(1);
-// root.left = new BinaryInorderTraveralProblem.TreeNode(2);
-// root.right = new BinaryInorderTraveralProblem.TreeNode(3);
-// root.left.left = new BinaryInorderTraveralProblem.TreeNode(4);
-// root.left.right = new BinaryInorderTraveralProblem.TreeNode(5);
-// root.right.right = new BinaryInorderTraveralProblem.TreeNode(6);
