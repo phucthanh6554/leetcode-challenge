@@ -1,13 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new MaximumDepthOfTreeProblem();
+var service = new ConvertSortedArrayToBinarySearchTreeProblem();
 
-var root = new MaximumDepthOfTreeProblem.TreeNode(3);
-root.left = new MaximumDepthOfTreeProblem.TreeNode(9);
-root.right = new MaximumDepthOfTreeProblem.TreeNode(20);
-root.right.left = new MaximumDepthOfTreeProblem.TreeNode(15);
-root.right.right = new MaximumDepthOfTreeProblem.TreeNode(7);
-
-var result = service.MaxDepth(root);
+var result = service.SortedArrayToBST(new[] { -10,-3,0,5,9 });
 
 Console.WriteLine();
