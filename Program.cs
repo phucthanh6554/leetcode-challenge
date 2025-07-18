@@ -1,17 +1,13 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new SymmetricTreeProblem();
+var service = new MaximumDepthOfTreeProblem();
 
-var root = new SymmetricTreeProblem.TreeNode(1);
-root.left = new SymmetricTreeProblem.TreeNode(2);
-root.right = new SymmetricTreeProblem.TreeNode(2);
+var root = new MaximumDepthOfTreeProblem.TreeNode(3);
+root.left = new MaximumDepthOfTreeProblem.TreeNode(9);
+root.right = new MaximumDepthOfTreeProblem.TreeNode(20);
+root.right.left = new MaximumDepthOfTreeProblem.TreeNode(15);
+root.right.right = new MaximumDepthOfTreeProblem.TreeNode(7);
 
-root.left.left = new SymmetricTreeProblem.TreeNode(3);
-root.left.right = new SymmetricTreeProblem.TreeNode(4);
-
-root.right.left = new SymmetricTreeProblem.TreeNode(4);
-//root.right.right = new SymmetricTreeProblem.TreeNode(3);
-
-var result = service.IsSymmetric(root);
+var result = service.MaxDepth(root);
 
 Console.WriteLine();
