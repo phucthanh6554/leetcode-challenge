@@ -1,14 +1,23 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new MinimumDepthOfTreeProblem();
+var service = new PathSumProblem();
 
-var tree = new MinimumDepthOfTreeProblem.TreeNode(3);
-tree.left = new MinimumDepthOfTreeProblem.TreeNode(9);
-tree.right = new MinimumDepthOfTreeProblem.TreeNode(20);
-tree.right.left = new MinimumDepthOfTreeProblem.TreeNode(15);
-tree.right.right = new MinimumDepthOfTreeProblem.TreeNode(7);
+var root = new PathSumProblem.TreeNode(1)
+{
+    left = new PathSumProblem.TreeNode(-2)
+    {
+        left = new PathSumProblem.TreeNode(1)
+        {
+            left = new PathSumProblem.TreeNode(-1)
+        },
+        right = new PathSumProblem.TreeNode(3)
+    },
+    right = new PathSumProblem.TreeNode(-3)
+    {
+        left = new PathSumProblem.TreeNode(-2)
+    }
+};
 
-
-var result = service.MinDepth(tree);
+var result = service.HasPathSum(root, -1);
 
 Console.WriteLine();
