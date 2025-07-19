@@ -1,14 +1,14 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new IsBalanceTreeProblem();
+var service = new MinimumDepthOfTreeProblem();
 
-var tree = new IsBalanceTreeProblem.TreeNode(0);
-tree.left = new IsBalanceTreeProblem.TreeNode(1);
-tree.right = new IsBalanceTreeProblem.TreeNode(2);
-tree.left.left = new IsBalanceTreeProblem.TreeNode(3);
-tree.left.left.left = new IsBalanceTreeProblem.TreeNode(4);
+var tree = new MinimumDepthOfTreeProblem.TreeNode(3);
+tree.left = new MinimumDepthOfTreeProblem.TreeNode(9);
+tree.right = new MinimumDepthOfTreeProblem.TreeNode(20);
+tree.right.left = new MinimumDepthOfTreeProblem.TreeNode(15);
+tree.right.right = new MinimumDepthOfTreeProblem.TreeNode(7);
 
 
-var result = service.IsBalanced(tree);
+var result = service.MinDepth(tree);
 
 Console.WriteLine();
