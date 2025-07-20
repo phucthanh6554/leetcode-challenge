@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new ValidPalindromeProblem();
-//A man, a plan, a canal: Panama
-var result = service.IsPalindrome("A man, a plan, a canal: Panama");
+var service = new SingleNumberProblem();
+
+var result = service.SingleNumber(new [] { 4,1,2,1,2 });
 
 Console.WriteLine();
