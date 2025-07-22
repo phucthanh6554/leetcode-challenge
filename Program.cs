@@ -1,11 +1,11 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new BinaryPreorderTraversal();
+var service = new BinaryPostorderTraversal();
 
-var tree = new BinaryPreorderTraversal.TreeNode(1);
-tree.right = new BinaryPreorderTraversal.TreeNode(2);
-tree.right.left = new BinaryPreorderTraversal.TreeNode(3);
+var tree = new BinaryPostorderTraversal.TreeNode(1);
+tree.right = new BinaryPostorderTraversal.TreeNode(2);
+tree.right.left = new BinaryPostorderTraversal.TreeNode(3);
 
-var result = service.PreorderTraversal(tree);
+var result = service.PostorderTraversal(tree);
 
 Console.WriteLine();
