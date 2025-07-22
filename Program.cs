@@ -1,17 +1,11 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new LinkedListCycleProblem();
+var service = new BinaryPreorderTraversal();
 
-var head = new ListNode(4);
-var node1 = new ListNode(2);
-var node2 = new ListNode(0);
-var node3 = new ListNode(4);
+var tree = new BinaryPreorderTraversal.TreeNode(1);
+tree.right = new BinaryPreorderTraversal.TreeNode(2);
+tree.right.left = new BinaryPreorderTraversal.TreeNode(3);
 
-head.next = node1;
-node1.next = node2;
-node2.next = node3;
-node3.next = node1;
-
-var result = service.HasCycle(head);
+var result = service.PreorderTraversal(tree);
 
 Console.WriteLine();
