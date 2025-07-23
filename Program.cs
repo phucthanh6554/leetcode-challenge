@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new ExcelSheetColumnProblem();
+var service = new ExcelSheetColumnNumberProblem();
 
-var result = service.ConvertToTitle(701);
+var result = service.TitleToNumber("ZY");
 
 Console.WriteLine();
