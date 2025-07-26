@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new ExcelSheetColumnNumberProblem();
+var service = new HappyNumberProblem();
 
-var result = service.TitleToNumber("ZY");
+var result = service.IsHappy(2);
 
 Console.WriteLine();
