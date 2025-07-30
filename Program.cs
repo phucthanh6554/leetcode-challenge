@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new ThreeSumProblem();
+var service = new LetterCombinationOfPhoneNumber();
 
-var result = service.ThreeSum(new []{-1,0,1,2,-1,-4});
+var result = service.LetterCombinations("23");
 
 Console.WriteLine(result);
