@@ -1,9 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new RemoveNthNodeFromEndProblem();
+var service = new GenerateParenthesesProblem();
 
-var list = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-
-var result = service.RemoveNthFromEnd(new ListNode(1), 1);
+var result = service.GenerateParenthesis(3);
 
 Console.WriteLine(result);
