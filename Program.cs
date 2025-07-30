@@ -1,9 +1,8 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new SwapNodeInPairProblem();
+var service = new DivideTwoIntegerProblem();
 
-var list = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
-
-var result = service.SwapPairs(list);
+//var result = service.Divide(-2147483648, 1);
+var result = service.Divide(120, 5);
 
 Console.WriteLine(result);
