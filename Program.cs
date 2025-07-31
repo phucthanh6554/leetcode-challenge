@@ -1,8 +1,8 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new DivideTwoIntegerProblem();
+var service = new NextPermutationProblem();
 
 //var result = service.Divide(-2147483648, 1);
-var result = service.Divide(120, 5);
+service.NextPermutation(new[] { 2, 3, 1 });
 
-Console.WriteLine(result);
+Console.WriteLine();
