@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new CountAndSayProblem();
+var service = new CombinationSumProblem();
 
-var result = service.CountAndSay(2);
+var result = service.CombinationSum(new int[] { 2, 3, 6, 7 }, 7);
 
 Console.WriteLine();
