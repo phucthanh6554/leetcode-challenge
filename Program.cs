@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new CombinationTwoProblem();
+var service = new MultiplyStringProblem();
 
-var result = service.CombinationSum2(new[] { 10, 1, 2, 7, 6, 1, 5 }, 8);
+var result = service.Multiply("123", "456");
 
 Console.WriteLine();
