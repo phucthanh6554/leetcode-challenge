@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new CombinationSumProblem();
+var service = new CombinationTwoProblem();
 
-var result = service.CombinationSum(new int[] { 2, 3, 6, 7 }, 7);
+var result = service.CombinationSum2(new[] { 10, 1, 2, 7, 6, 1, 5 }, 8);
 
 Console.WriteLine();
