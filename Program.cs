@@ -1,8 +1,15 @@
 ﻿using System.Reflection.PortableExecutable;
 using Leetcode.Algorithm;
 
-var service = new PermutationUniqueProblem();
+var service = new RotateImageProblem();
 
-var result = service.PermuteUnique(new[] { 1, 1, 2 });
+var matrix = new int[][]
+{
+    new int[] { 1, 2, 3 },
+    new int[] { 4, 5, 6 },
+    new int[] { 7, 8, 9 },
+};
+
+service.Rotate(matrix);
 
 Console.WriteLine();
