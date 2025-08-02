@@ -1,7 +1,7 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new MultiplyStringProblem();
+var service = new PermutationProblem();
 
-var result = service.Multiply("123", "456");
+var result = service.Permute(new[] { 1, 2, 3 });
 
 Console.WriteLine();
