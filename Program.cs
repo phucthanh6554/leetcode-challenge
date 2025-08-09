@@ -1,8 +1,8 @@
 ﻿using System.Reflection.PortableExecutable;
 using Leetcode.Algorithm;
 
-var service = new MaximumSubArrayProblem();
+var service = new JumpGamePossibleProblem();
 
-var result = service.MaxSubArray(new[] {5,4,-1,7,8});
+var result = service.CanJump(new[] { 3,2,1,0,4 });
 
 Console.WriteLine();
