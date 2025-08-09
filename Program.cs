@@ -1,8 +1,8 @@
 ﻿using System.Reflection.PortableExecutable;
 using Leetcode.Algorithm;
 
-var service = new AnagramGroupProblem();
+var service = new PowProblem();
 
-service.GroupAnagrams(new[] { "a", "ac" });
+var result = service.MyPow(2, 10);
 
 Console.WriteLine();
