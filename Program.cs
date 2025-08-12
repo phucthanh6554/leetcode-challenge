@@ -1,10 +1,13 @@
 ﻿using System.Reflection.PortableExecutable;
 using Leetcode.Algorithm;
 
-var service = new PalindromeLinkedListProblem();
+var service = new BinaryTreePathProblem();
 
-var list = new ListNode(1, new ListNode(2, new ListNode(2 ,new ListNode(1))));
+var tree = new BinaryTreePathProblem.TreeNode(1);
+tree.left = new BinaryTreePathProblem.TreeNode(2);
+tree.left.right = new BinaryTreePathProblem.TreeNode(5);
+tree.right = new BinaryTreePathProblem.TreeNode(3);
 
-var result = service.IsPalindrome(list);
+var result = service.BinaryTreePaths(tree);
 
 Console.WriteLine();
