@@ -1,8 +1,16 @@
 ﻿using System.Reflection.PortableExecutable;
 using Leetcode.Algorithm;
 
-var service = new JumpGamePossibleProblem();
+var service = new MergeIntervalsProblem();
 
-var result = service.CanJump(new[] { 3,2,1,0,4 });
+var arr = new int[4][]
+{
+    new int[] { 1, 3 },
+    new int[] { 2, 6 },
+    new int[] { 8, 10 },
+    new int[] { 15, 18 },
+};
+
+var result = service.Merge(arr);
 
 Console.WriteLine();
