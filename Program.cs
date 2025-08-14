@@ -1,15 +1,10 @@
 ﻿using System.Reflection.PortableExecutable;
 using Leetcode.Algorithm;
 
-var service = new InsertIntervalProblem();
+var service = new RotateListProblem();
 
-var arr = new int[1][]
-{
-    new [] {1, 5}
-};
+var node = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
 
-var newInterval = new int[] { 2, 3 };
-
-var result = service.Insert(arr, newInterval);
+var result = service.RotateRight(node, 5);
 
 Console.WriteLine();
