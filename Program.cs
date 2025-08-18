@@ -1,15 +1,8 @@
 ﻿using System.Reflection.PortableExecutable;
 using Leetcode.Algorithm;
 
-var service = new MinimumPathSumProblem();
+var service = new SimplifyPathProblem();
 
-var grid = new int[3][]
-{
-    new[] { 1, 3, 1 },
-    new[] { 1, 5, 1 },
-    new[] { 4, 2, 1 },
-};
-
-var result = service.MinPathSum(grid);
+var result = service.SimplifyPath("/.../a/../b/c/../d/./");
 
 Console.WriteLine();
