@@ -1,8 +1,8 @@
 ﻿using System.Reflection.PortableExecutable;
 using Leetcode.Algorithm;
 
-var service = new SimplifyPathProblem();
+var service = new EditDistanceProblem();
 
-var result = service.SimplifyPath("/.../a/../b/c/../d/./");
+var result = service.MinDistance("intention", "execution");
 
 Console.WriteLine();
