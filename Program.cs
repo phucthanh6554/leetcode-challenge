@@ -1,8 +1,8 @@
 ﻿using System.Reflection.PortableExecutable;
 using Leetcode.Algorithm;
 
-var service = new SortColorProblem();
+var service = new CombinationProblem();
 
-service.SortColors(new [] {2, 2, 0, 1, 0, 0, 2});
+service.Combine(4, 3);
 
 Console.WriteLine();
