@@ -1,8 +1,8 @@
 ﻿using System.Reflection.PortableExecutable;
 using Leetcode.Algorithm;
 
-var service = new CombinationProblem();
+var service = new ArraySubsetsProblem();
 
-service.Combine(4, 3);
+service.Subsets(new[] { 1, 2, 3, 4 });
 
 Console.WriteLine();
