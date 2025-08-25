@@ -1,15 +1,8 @@
 ﻿using System.Reflection.PortableExecutable;
 using Leetcode.Algorithm;
 
-var service = new WordSearchProblem();
+var service = new RemoveDuplicateFromSortedArrayTwo();
 
-var board = new char[][]
-{
-    new[] { 'A', 'B', 'C', 'E' },
-    new[] { 'S', 'F', 'C', 'S' },
-    new[] { 'A', 'D', 'E', 'E' }
-};
-
-service.Exist(board, "ABCCED");
+service.RemoveDuplicates(new int[] { 1,1,1,2,2,3 });
 
 Console.WriteLine();
