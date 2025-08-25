@@ -1,8 +1,15 @@
 ﻿using System.Reflection.PortableExecutable;
 using Leetcode.Algorithm;
 
-var service = new ArraySubsetsProblem();
+var service = new WordSearchProblem();
 
-service.Subsets(new[] { 1, 2, 3, 4 });
+var board = new char[][]
+{
+    new[] { 'A', 'B', 'C', 'E' },
+    new[] { 'S', 'F', 'C', 'S' },
+    new[] { 'A', 'D', 'E', 'E' }
+};
+
+service.Exist(board, "ABCCED");
 
 Console.WriteLine();
