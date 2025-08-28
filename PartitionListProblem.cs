@@ -29,9 +29,7 @@
 
                     while(node != null && node.val >= x)
                     {
-                        if(node.val >= x)
-                            latestLargerTargetNode = node;
-
+                        latestLargerTargetNode = node;
                         node = node.next;
                     }
 
