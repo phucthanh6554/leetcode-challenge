@@ -12,6 +12,9 @@ namespace Leetcode.Algorithm
         public int val;
         public ListNode next;
         public ListNode last;
+
+        public string Id = Guid.NewGuid().ToString();
+
         public ListNode(int val = 0, ListNode next = null)
         {
             this.val = val;
