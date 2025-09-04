@@ -1,8 +1,8 @@
 ﻿using System.Reflection.PortableExecutable;
 using Leetcode.Algorithm;
 
-var service = new SubsetTwoProblem();
+var service = new DecodeWaysProblem();
 
-var result = service.SubsetsWithDup(new []{1, 2, 2});
+var result = service.NumDecodings("12");
 
 Console.WriteLine();
