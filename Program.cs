@@ -1,10 +1,14 @@
 ﻿using System.Reflection.PortableExecutable;
 using Leetcode.Algorithm;
 
-var service = new RestoreIpAddressProblem();
+var service = new ValidateBinarySearchTreeProblem();
 
-var list = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+var tree = new ValidateBinarySearchTreeProblem.TreeNode(5);
+tree.left = new ValidateBinarySearchTreeProblem.TreeNode(4);
+tree.right = new ValidateBinarySearchTreeProblem.TreeNode(6);
+tree.right.left = new ValidateBinarySearchTreeProblem.TreeNode(3);
+tree.right.right = new ValidateBinarySearchTreeProblem.TreeNode(7);
 
-var result = service.RestoreIpAddresses("0000");
+var result = service.IsValidBST(tree);
 
 Console.WriteLine();
