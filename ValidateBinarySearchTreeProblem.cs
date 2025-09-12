@@ -10,15 +10,6 @@ public class ValidateBinarySearchTreeProblem
     {
         if (node == null)
             return true;
-
-        if (node.left == null && node.right == null)
-            return true;
-
-        if (node.left != null && node.left.val >= node.val)
-            return false;
-        
-        if (node.right != null && node.right.val <= node.val)
-            return false;
         
         if(node.val <= min && node.val >= max)
             return false;
