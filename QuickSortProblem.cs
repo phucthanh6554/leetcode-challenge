@@ -6,37 +6,36 @@ public class QuickSortProblem
     {
         QuickSort(nums, 0, nums.Length - 1);
     }
-    
-    private void QuickSort(int[] arr, int left, int right)
+
+    private void QuickSort(int[] nums, int left, int right)
     {
         if (left >= right)
             return;
         
-        var pivot = Partition(arr, left, right);
-        QuickSort(arr, left, pivot - 1);
-        QuickSort(arr, pivot + 1, right);
+        var pivot = Partition(nums, left, right);
+        QuickSort(nums, left, pivot - 1);
+        QuickSort(nums, pivot + 1, right);
     }
 
-    private int Partition(int[] arr, int left, int right)
+    private int Partition(int[] nums, int left, int right)
     {
-        var pivot = arr[right];
+        var pivot = nums[right];
         var i = left - 1;
         var j = left;
 
         while (j < right)
         {
-            if (arr[j] < pivot)
+            if (nums[j] < pivot)
             {
                 i += 1;
-                (arr[i], arr[j]) = (arr[j], arr[i]);
+                (nums[i], nums[j]) = (nums[j], nums[i]);
             }
 
             j++;
         }
 
         i += 1;
-        (arr[i], arr[j]) = (arr[j], arr[i]);
-        
+        (nums[i], nums[j]) = (nums[j], nums[i]);
         return i;
     }
 }

@@ -15,31 +15,25 @@ namespace Leetcode.Algorithm
     {
         public int LengthOfLongestSubstring(string s)
         {
-            Dictionary<char, bool> mapping = new Dictionary<char, bool>();
-            int max = 0;
-            int current = 0;
+            if(string.IsNullOrEmpty(s))
+                return 0;
+            
+            var max = 0;
+            var i = 0;
+            
+            var dict = new Dictionary<char, int>();
 
-            int firstStart = 0;
-            int index = 0;
-
-            while(index  < s.Length)
+            for (var j = 0; j < s.Length; j++)
             {
-                if (!mapping.ContainsKey(s[index]))
-                    current++;
-                else
+                if (dict.ContainsKey(s[j]) && dict[s[j]] >= i)
                 {
-                    mapping.Clear();
-                    firstStart += 1;
-                    index = firstStart;
-                    current = 0;
-                    continue;
+                    i = dict[s[j]] + 1;
                 }
-
-                mapping.TryAdd(s[index], false);
-                max = current > max ? current : max;
-                index++;
+                
+                dict[s[j]] = j;
+                max = Math.Max(max, j - i + 1);
             }
-
+            
             return max;
         }
     }
