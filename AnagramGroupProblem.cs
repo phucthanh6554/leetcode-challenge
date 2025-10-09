@@ -1,34 +1,43 @@
+using System.Text;
+
 namespace Leetcode.Algorithm;
 
 public class AnagramGroupProblem
 {
-    public IList<IList<string>> GroupAnagrams(string[] strs) 
+    public IList<IList<string>> GroupAnagrams(string[] strs)
     {
-        var dic = new Dictionary<int, IList<string>>();
+        var result = new Dictionary<string, IList<string>>();
 
         foreach (var str in strs)
         {
-            var sum = SumString(str);
-
-            var found = dic.TryGetValue(sum, out var list);
+            var hash = CreateHash(str);
             
-            if(!found)
-                dic.Add(sum, new List<string>{str});
+            if(!result.ContainsKey(hash))
+                result.Add(hash, new List<string> {str});
             else
-                list.Add(str);
+                result[hash].Add(str);
         }
         
-        return dic.Values.ToList();
+        return result.Values.ToList();
     }
 
-    private int SumString(ReadOnlySpan<char> str)
+    private string CreateHash(ReadOnlySpan<char> str)
     {
-        var sum = 0;
-        foreach(var c in str)
+        Span<int> hash = stackalloc int[26];
+
+        foreach (var c in str)
         {
-            sum += c - 'a' + 1;
+            hash[c - 'a']++;
+        }
+
+        var sb = new StringBuilder();
+
+        foreach (var c in hash)
+        {
+            sb.Append('-');
+            sb.Append(c);
         }
         
-        return sum;
+        return sb.ToString();
     }
 }
