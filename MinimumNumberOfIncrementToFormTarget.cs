@@ -5,7 +5,20 @@ namespace Leetcode.Algorithm;
 /// </summary>
 public class MinimumNumberOfIncrementToFormTarget
 {
-    public int MinNumberOperations(int[] target) 
+    public int MinNumberOperations(int[] target)
+    {
+        var result = target[0];
+
+        for (var i = 1; i < target.Length; i++)
+        {
+            if(target[i] > target[i - 1])
+                result += target[i] - target[i - 1];
+        }
+        
+        return result;
+    }
+
+    private static int MyFirstStupidSolution(int[] target)
     {
         var tempArr = new int[target.Length];
         
