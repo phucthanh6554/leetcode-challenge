@@ -2,9 +2,9 @@
 
 var node = new ListNode(-10, new ListNode(-3, new ListNode(0, new ListNode(5, new ListNode(9)))));
 
-var service = new MinimumTimeToMakeRopeColorful();
+var service = new FindXSumOfAllKLongSubArr();
 
-var max = service.MinCost("aabaa", new[] { 1, 2, 3, 4, 1 });
+var max = service.FindXSum(new[] { 3,8,7,8,7,5 }, 2, 2);
 
 
 Console.WriteLine();
