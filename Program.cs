@@ -1,5 +1,5 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new CountSpecialTriplets();
+var service = new FourDivisorsProblem();
 
-var test = service.SpecialTriplets(new []{0, 1, 0, 0});
+var test = service.SumFourDivisors(new int[] { 21, 4, 7 });
