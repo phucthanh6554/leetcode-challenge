@@ -1,13 +1,13 @@
 ﻿using Leetcode.Algorithm;
 
-var service = new DetectCyclesIn2DGridProblem();
+var service = new CheckValidPathInGridProblem();
 
-var grid = new char[][]
+var grid = new int[][]
 {
-    ['a','a','a','a'],['a','b','b','a'],['a','b','b','a'],['a','a','a','a']
+    [1]
 };
 
-var test = service.ContainsCycle(grid);
+var test = service.HasValidPath(grid);
 
 Console.WriteLine(test);
 
