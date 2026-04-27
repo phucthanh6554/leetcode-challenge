@@ -20,7 +20,7 @@ public class NumberOfIslandsProblem
         return result;
     }
 
-    public void MarkIsland(char[][] grid, int x, int y)
+    private static void MarkIsland(char[][] grid, int x, int y)
     {
         if (x < 0 || x >= grid.Length || y < 0 || y >= grid[0].Length || grid[x][y] == '0')
             return;
